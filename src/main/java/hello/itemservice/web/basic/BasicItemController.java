@@ -1,4 +1,4 @@
-package hello.itemservice.web;
+package hello.itemservice.web.basic;
 
 import hello.itemservice.domain.Item;
 import hello.itemservice.domain.ItemRepository;
@@ -27,7 +27,7 @@ public class BasicItemController {
 
     @PostConstruct
     public void init(){
-        itemRepository.save(new Item("testA", 10000,10));
-        itemRepository.save(new Item("testB", 20000,20));
+        itemRepository.save(new Item("itemA", 10000,10));
+        itemRepository.save(new Item("itemB", 20000,20));
     }
 }
