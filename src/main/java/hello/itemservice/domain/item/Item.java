@@ -12,18 +12,18 @@ import java.util.List;
 @Data
 public class Item {
 
-    @NotNull(groups = UpdateCheck.class) //수정 요구상항 추가
+//    @NotNull(groups = UpdateCheck.class) //수정 요구상항 추가
     private Long id;
 
-    @NotBlank(groups = {SaveCheck.class, UpdateCheck.class})
+//    @NotBlank(groups = {SaveCheck.class, UpdateCheck.class})
     private String itemName;
 
-    @NotNull(groups = {SaveCheck.class, UpdateCheck.class})
-    @Range(min = 1000, max = 1000000, groups = {SaveCheck.class, UpdateCheck.class})
+//    @NotNull(groups = {SaveCheck.class, UpdateCheck.class})
+//    @Range(min = 1000, max = 1000000, groups = {SaveCheck.class, UpdateCheck.class})
     private Integer price;
 
-    @NotNull(groups = {SaveCheck.class, UpdateCheck.class})
-    @Max(value = 9999, groups = {SaveCheck.class})
+//    @NotNull(groups = {SaveCheck.class, UpdateCheck.class})
+//    @Max(value = 9999, groups = {SaveCheck.class})
     private Integer quantity;
 
     private Boolean open; //판매 여부
